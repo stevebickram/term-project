@@ -1,0 +1,196 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+html {
+overflow-x: hidden; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.background {
+    height: 100vh;
+    overflow: hidden;
+}
+.skip-links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.skip-links a {
+    position:absolute;
+    top: -3em;
+    padding: 0.5em 0.75em;
+    background-color:#000;
+    color:#fff;
+    font-weight: bold;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+.skip-links a:focus {
+    top:0;
+}
+.title { 
+    position:absolute;
+    top:25em;
+}
+.box {
+    background-color: #2A0C59;
+    transform: translateY(-50%);
+    max-height: 0em;
+    position: absolute;
+    z-index: 0;
+    transition: all 1s linear;
+    text-align: center;
+    display: none;
+    overflow: hidden;
+}
+.js-collapse {
+    display: block;
+    max-height: 100em;
+    width: 100%;
+    
+}
+.nav {
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+}
+.nav ul {
+    padding: 0;
+}
+
+.nav a { 
+    color: white;
+    text-decoration: none;
+}
+
+.nav li {
+    display: inline-block;
+    background-color: #2A0C59;
+    margin:2em 0 1em 1em;
+    padding: 0;
+    text-align: right;
+}
+
+.nav li a:hover{ 
+    color:black;
+}
+
+.nav li a:active{
+    color: black;
+}
+
+.nav-current:visited{
+    color:black;
+}
+.button {
+    position: absolute;
+    top:5%;
+    right: 5%;
+    width: 4em;
+    border: 0;
+    line-height: 0;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    transition: all .25s linear;
+    margin: 1em;
+    z-index: 1;
+}
+button a:hover {
+    transition: all .5s linear;
+    background-color: #2A0C59;
+    color: black;
+}
+.banner {
+    overflow: hidden;
+    padding:12em;
+    background: no-repeat;
+    background-image: url(../images/background-1.png);
+    background-size: 120em;
+    background-position: center;
+}
+.banner-header {
+    overflow:hidden;
+
+}
+.intro {
+    overflow: hidden;
+    padding:378px;
+    background: no-repeat;
+    background-image: url(../images/background-2.png);
+    background-size: 120em;
+    background-position: center;
+}
+@media only screen and (min-width: 25em) {
+.button {
+    position: absolute;
+    top:5%;
+    right: 5%;
+    width: 4em;
+    border: 0;
+    line-height: 0;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    transition: all .25s linear;
+    margin: 1em;
+    z-index: 20;
+}
+button a:hover {
+    transition: all .5s linear;
+    background-color: #2A0C59;
+    color: black;
+}
+}
+@media only screen and (min-width: 38em) {
+    .button-2 {
+    position: relative;
+    top: 38em;
+    left:21em;
+    border-radius: 5%;
+    border-width: 1px;
+    border-color:white; 
+    color: black;
+    background-color: white;
+    width:18em;
+    height: 10em;
+}
+button a:hover {
+    transition: all .5s linear;
+    background-color: #2A0C59;
+    color: black;
+}
+}
+@media only screen and (min-width: 60em) {
+    
+.button-2 {
+    position: relative;
+    top: 38em;
+    left:21em;
+    border-radius: 5%;
+    border-width: 1px;
+    border-color:white; 
+    color: black;
+    background-color: white;
+    width:18em;
+    height: 10em;
+}
+button a:hover {
+    transition: all .5s linear;
+    background-color: #2A0C59;
+    color: black;
+}
+}
