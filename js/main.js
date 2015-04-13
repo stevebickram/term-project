@@ -8,6 +8,15 @@ $btnCollapse.on('click', function () {
 
 var $intro = $('.intro');
 
+var $ghostSection = $('.ghost');
+$ghostSection.waypoint(function () {
+    $ghostSection.addClass('js-ghost-active');
+}, {offset: '65%'});
+
+$ghostSection.waypoint(function () {
+    $ghostSection.addClass('js-mouth-active');
+}, {offset: '85%'});
+
 //$intro.waypoint(function () {
 //    $intro.addClass('js-intro-animate');
 //}, { offset: '50%'});

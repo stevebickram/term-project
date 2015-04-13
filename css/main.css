@@ -124,7 +124,20 @@ button a:hover {
 }
 .banner-header {
     overflow:hidden;
-
+    position: relative;
+    left: 15%;
+}
+.cloud-1 { 
+    position: relative;
+    left:-41em;
+    top:-14em;
+    width: 5.5em;
+}
+.cloud-2 {
+    position: relative;
+    width: 5em;
+    top:-9em;
+    left:11em;
 }
 .intro {
     overflow: hidden;
@@ -134,6 +147,33 @@ button a:hover {
     background-size: 120em;
     background-position: center;
 }
+.me {
+    width:7em;
+}
+.ghost {
+    width:5em;
+    position: relative;
+    text-align: center;
+    top:-35em;
+    left: 11em;
+}
+.ghost2 {
+    width:5em;
+    position: relative;
+    text-align: center;
+    top:-55em;
+    left: 70em;
+}
+#mouth {
+    opacity: 0;
+}
+.js-mouth-active #mouth {
+    opacity: 1;
+}
+.js-ghost-active #ghost {
+    opacity: 1;
+}
+
 @media only screen and (min-width: 25em) {
 .button {
     position: absolute;
