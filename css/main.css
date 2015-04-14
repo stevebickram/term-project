@@ -173,7 +173,22 @@ button a:hover {
 .js-ghost-active #ghost {
     opacity: 1;
 }
-
+.contact {
+    overflow: hidden;
+    padding:338px;
+    background: no-repeat;
+    background-image: url(../images/background-3.png);
+    background-size: 100em;
+    background-position: center;
+    position: relative;
+    top: -23em;
+}
+.me {
+    position: relative;
+    top: -11em;
+    left:87.5%;
+    width: 5em;
+}
 @media only screen and (min-width: 25em) {
 .button {
     position: absolute;
