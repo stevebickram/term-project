@@ -188,9 +188,9 @@ button a:hover {
     left: 10em;
 }
 .js-ghost{ 
-    -webkit-animation: ghost 3s linear;
+    -webkit-animation: ghost 1s linear;
 
-    animation: ghost 3s linear;
+    animation: ghost 1s linear;
 }
 
 @-webkit-keyframes ghost {
