@@ -17,6 +17,20 @@ $ghostSection.waypoint(function () {
     $ghostSection.addClass('js-mouth-active');
 }, {offset: '85%'});
 
+var $btnBounce = $('.btn-gallery-2');
+var $ghost = $('.ghost');
+
+$btnBounce.on('click', function () {
+$ghost.addClass('js-ghost');
+
+});
+
+$ghost.on('webkitanimationend animationend', function () {
+    $ghost.removeClass('js-ghost');
+
+    
+  });
+
 //$intro.waypoint(function () {
 //    $intro.addClass('js-intro-animate');
 //}, { offset: '50%'});
