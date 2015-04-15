@@ -148,7 +148,7 @@ button a:hover {
     background-size: 120em;
     background-position: center;
     position: relative;
-    top:-5em;
+    top:-16em;
 }
 .gallery-1 {
     display: inline-block;
@@ -156,7 +156,7 @@ button a:hover {
     padding: none;
     margin: none;
     position: relative;
-    top:1em;
+    top:10em;
     left:2em;
 }
 .gallery-2 {
@@ -165,7 +165,7 @@ button a:hover {
     padding: none;
     margin: none;
     position: relative;
-    top:1em;
+    top:10em;
     left:3em;
 }
 .gallery-3 {
@@ -174,18 +174,15 @@ button a:hover {
     padding: none;
     margin: none;
     position: relative;
-    top:1em;
+    top:10em;
     left:6em;
-}
-.me {
-    width:7em;
 }
 .ghost {
     width:5em;
     position: relative;
     text-align: center;
-    top:-35em;
-    left: 10em;
+    top:-25em;
+    left: -1em;
 }
 .js-ghost{ 
     -webkit-animation: ghost 1s linear;
@@ -248,6 +245,11 @@ button a:hover {
         top:10px;
     }
 }
+.ghost:hover #mouth {
+-webkit-transform: translateX(10px);
+    transform: translateX(10px);
+
+}
 .ghost2 {
     width:5em;
     position: relative;
@@ -255,15 +257,24 @@ button a:hover {
     top:-55em;
     left: 70em;
 }
+.menu { 
+    overflow: hidden;
+    position: relative;
+}
+.btn-gallery-1 {
 
-.button-2 {
-    display: inline-block;
 }
-.button-3 {
+.btn-gallery-3 {
     display: inline-block;
+    width: 3em;
 }
-.button-4 {
+.btn-gallery-3 {
     display: inline-block;
+    width: 3em;
+}
+.btn-gallery-3 {
+    display: inline-block;
+    width: 3em;
 }
 
 .js-mouth-active #mouth {
@@ -284,8 +295,8 @@ button a:hover {
 }
 .me {
     position: relative;
-    top: -11em;
-    left:87.5%;
+    top: 5.5em;
+    left:106%;
     width: 5em;
 }
 @media only screen and (min-width: 25em) {
