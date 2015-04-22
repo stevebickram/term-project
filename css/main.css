@@ -49,7 +49,7 @@ overflow-x: hidden;
     color: white;
 }
 .box {
-    background-color: #2A0C59;
+    background-color: #04B404;
     transform: translateY(-10%);
     max-height: 0em;
     position: absolute;
@@ -78,7 +78,7 @@ overflow-x: hidden;
 }
 .nav li {
     display: inline-block;
-    background-color: #2A0C59;
+    background-color: #04B404;
     margin: 1em;
     padding: 0;
     text-align: center;
@@ -96,8 +96,8 @@ overflow-x: hidden;
 .button {
     position: absolute;
     top:5%;
-    right: 5%;
-    width: 1em;
+    right: 15%;
+    width:5em;
     border: 0;
     line-height: 0;
     display: inline-block;
@@ -108,17 +108,19 @@ overflow-x: hidden;
 }
 .button a:hover {
     transition: all .5s linear;
-    background-color: #2A0C59;
+    background-color: white;
     color: black;
+    opacity: .5;
 }
 .banner {
     overflow: hidden;
     padding:10em;
     background: no-repeat;
     background-image: url(../images/background-1.png);
-    background-size: 108em;
+    background-size: 138em;
     background-position: center;
     position: relative;
+    height:42em;
     top: -1em;
 }
 .banner-header {
@@ -132,17 +134,39 @@ overflow-x: hidden;
 }
 @-webkit-keyframes header {    
     0% {
-     tranform: scale(1);   
+        tranform: scale(1);   
     }
     100% {
-        transform:  scale(1.1);}
+        transform:  scale(1.1);
+    }
 }
 @keyframes header {  
     0% {
-     tranform: scale(1);   
+        tranform: scale(1);   
     }
     100% {
-        transform:  scale(1.1);}
+        transform:  scale(1.1);
+    }
+}
+.down {
+    background: none;
+    border: 2px;
+    width: 3em;
+    position: relative;
+    top: 12em;
+}
+.arrow {
+    width: 3em;
+}
+.down2 {
+    background: none;
+    border: 2px;
+    width: 3em;
+    position: relative;
+    top: -1em;
+}
+.arrow2 {
+    width: 3em;
 }
 .cloud-1 { 
     position: relative;
@@ -158,14 +182,15 @@ overflow-x: hidden;
     }
     100% {
      left:-45em;  
-}}
+    }
+}
 @keyframes cloud1 {   
     0% {
      left:-41em;  
     }
     100% {
      left:-45em;  
-}
+    }
 }
 .cloud-2 { 
     position: relative;
@@ -183,7 +208,8 @@ overflow-x: hidden;
 
     100% {
      left:6em;  
-}}
+    }
+}
 @keyframes cloud2 {
     
     0% {
@@ -192,7 +218,7 @@ overflow-x: hidden;
 
     100% {
      left:1em;  
-}
+    }
 }
 .gallery {
     overflow: hidden;
@@ -201,7 +227,7 @@ overflow-x: hidden;
     background-size: 120em;
     background-position: center;
     position: relative;
-    padding: none;
+    padding: 5em;
     top:-3em;
 }
 .images {
@@ -210,18 +236,22 @@ overflow-x: hidden;
     padding:10em;
     margin: none;
     position: relative;
-    top:10em;
-    left:7.5em;
+    top:7em;
+    left:-5em;
     background-size: 20em;
     background-position: center;
     background: no-repeat;
 }
+.scroll {
+    width:5em;
+}
+
 .js-btn-gallery1 {
     background-image: url(../images/image-1.png);
 }
 .js-btn-gallery2 {
     background-image: url(../images/image-2.png);
-    margin: 0 4em;
+
 }
 .js-btn-gallery3 {
     background-image: url(../images/image-3.png);
@@ -240,9 +270,6 @@ overflow-x: hidden;
     width: 70em;
     padding: none;
     margin: none;
-    position: relative;
-    top:10em;
-    left:6em;
 }
 .svg {
     position: relative;
@@ -253,8 +280,8 @@ overflow-x: hidden;
     width:5em;
     position: relative;
     text-align: center;
-    top:-32em;
-    left: -2em;
+    top:-39em;
+    left: -6em;
 }
 .js-ghost{ 
     -webkit-animation: ghost 1s linear;
@@ -263,30 +290,30 @@ overflow-x: hidden;
 }
 @-webkit-keyframes ghost {
     0% {
-        top:-32em;
-        left: -2em;
+        top:-39em;
+        left: -6em;
     }
     50% {
-        top:-28em;
-        left: 0em
+        top:-37em;
+        left: -6em
     }
     100% { 
-        top:-25em;
-        left: -1em
+        top:-39em;
+        left: -6em
     }
 }
 @keyframes ghost {
-     0% {
-        top:-32em;
-        left: -2em;
+    0% {
+        top:-39em;
+        left: -6em;
     }
     50% {
-        top:-28em;
-        left: 0em
+        top:-37em;
+        left: -6em;
     }
     100% { 
-        top:-25em;
-        left: -1em
+        top:-39em;
+        left: -6em;
     }
 }
 .ghost:hover #mouth {
@@ -299,7 +326,8 @@ overflow-x: hidden;
      tranform: scale(1);   
     }
     100% {
-        transform:  scale(1.1);}
+        transform:  scale(1.1);
+    }
 }
 @keyframes oooh {
     0% {
@@ -307,23 +335,78 @@ overflow-x: hidden;
     }
 
     100% {
-        transform:  scale(1.1);}
+        transform:  scale(1.1);
+    }
 }
 .ghost2 {
     width:5em;
     position: relative;
     text-align: center;
-    top:-19em;
-    left:12em;
+    top:-24em;
+    left:20em;
+}
+.js-ghost2{ 
+    -webkit-animation: ghost2 1s linear;
+    animation: ghost2 1s linear;
+}
+@-webkit-keyframes ghost2 {
+    0% {
+        top:-29em;
+        left: 64em;
+    }
+    50% {
+        top:-33em;
+        left: 63em
+    }
+    100% { 
+        top:-29em;
+        left: 64em
+    }
+}
+@keyframes ghost2 {
+     0% {
+        top:-29em;
+        left: 64em;
+    }
+    50% {
+        top:-33em;
+        left: 63em
+    }
+    100% { 
+        top:-29em;
+        left: 64em
+    }
+}
+.ghost2:hover #mouth2 {
+    -webkit-animation: oooh2 1s ease-in-out infinite alternate;
+    animation: oooh2 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes oooh2 {  
+    0% {
+     tranform: scale(1);   
+    }
+    100% {
+        transform:  scale(1.1);
+    }
+}
+@keyframes oooh2 {
+    0% {
+     tranform: scale(1);   
+    }
+
+    100% {
+        transform:  scale(1.1);
+    }
 }
 .menu { 
     overflow: hidden;
     position: relative;
-    top: 10em;
-    left:6em;
+    top: 12em;
+    left:1em;
+    width: 20em;
 }
-.scroll {
-    width: 5em;
+.burger {
+    width: 3em;
     margin: 0;
     background: none;
 }
@@ -331,16 +414,20 @@ overflow-x: hidden;
     background: none;
     border: none;
     position: relative;
+    width: 6em;
 }
 .btn-gallery-2 {
     background: none;
     border: none;
     position: relative;
+    width: 6em;
+
 }
 .btn-gallery-3 {
     background: none;
     border: none;
     position: relative;
+    width: 6em;
 }
 .js-mouth-active #mouth {
     opacity: 1;
@@ -354,10 +441,10 @@ overflow-x: hidden;
     padding: 6em;
     background: no-repeat;
     background-image: url(../images/background-3.png);
-    background-size: 80em;
+    background-size: 85em;
     background-position: center;
     position: relative;
-    top:-3em;
+    top:-4em;
     color: white;
     text-align: center;
 }
@@ -384,29 +471,88 @@ overflow-x: hidden;
 }
 .button a:hover {
     transition: all .5s linear;
-    background-color: #2A0C59;
+    background-color: #04B404;
     color: black;
+}
+.down {
+    background: none;
+    border: 2px;
+    width: 3em;
+    position: relative;
+    top: 2em;
 }
 .ghost2 {
     width:5em;
     position: relative;
     text-align: center;
-    top:-19em;
-    left:34em;
+    top:-23em;
+    left:9em;
 }
-    .images {
+.js-ghost2{ 
+    -webkit-animation: ghost 1s linear;
+    animation: ghost2 1s linear;
+}
+@-webkit-keyframes ghost2 {
+    0% {
+        top:-23em;
+        left:9em;
+    }
+    50% {
+        top:-26em;
+        left:9em;
+    }
+    100% { 
+        top:-23em;
+        left:9em;
+    }
+}
+@keyframes ghost2 {
+     0% {
+        top:-23em;
+        left:9em;
+    }
+    50% {
+        top:-26em;
+        left:9em;
+    }
+    100% { 
+        top:-23em;
+        left:9em;
+    }
+}
+.ghost2:hover #mouth2 {
+    -webkit-animation: oooh2 1s ease-in-out infinite alternate;
+    animation: oooh2 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes oooh2 {  
+    0% {
+     tranform: scale(1);   
+    }
+    100% {
+        transform:  scale(1.1);}
+}
+@keyframes oooh2 {
+    0% {
+     tranform: scale(1);   
+    }
+
+    100% {
+        transform:  scale(1.1);}
+}
+.images {
     display: inline-block;
     width: 50em;
     padding:10em;
     margin: none;
     position: relative;
     top:5em;
-    left:6em;
+    left:1em;
     background-position: center;
     background: no-repeat;
 }
 .js-btn-gallery1 {
     background-image: url(../images/image-1.png);
+    left:2em;
 
 }
 .js-btn-gallery2 {
@@ -441,6 +587,7 @@ button a:hover {
     background-image: url(../images/background-1.png);
     background-size: 122em;
     background-position: center;
+    height: 37em;
 }
 .banner-header {
     overflow:hidden;
@@ -451,6 +598,14 @@ button a:hover {
     -webkit-animation: header 4s ease-in-out infinite alternate;
     animation: header 4s ease-in-out infinite alternate;
 }
+.down {
+    background: none;
+    border: 2px;
+    width: 3em;
+    position: relative;
+    top: 2em;
+    left:4em;
+}
 .images {
     display: inline-block;
     width: 40em;
@@ -458,7 +613,7 @@ button a:hover {
     margin: none;
     position: relative;
     top:5em;
-    left:7em;
+    left:4em;
     background-size: 100%;
     background-position: center;
     background-image: no-repeat;
@@ -524,14 +679,66 @@ button a:hover {
     position: relative;
     width: 40em;
     top: 11em;
-    left: 43%;
+    left: 40%;
 }
 .ghost2 {
     width:5em;
     position: relative;
     text-align: center;
-    top:-24em;
+    top:-23em;
     left:39em;
+}
+.js-ghost2{ 
+    -webkit-animation: ghost 1s linear;
+    animation: ghost2 1s linear;
+}
+@-webkit-keyframes ghost2 {
+    0% {
+        top:-23em;
+        left:39em;
+    }
+    50% {
+        top:-26em;
+        left: 42em
+    }
+    100% { 
+        top:-23em;
+        left:39em;
+    }
+}
+@keyframes ghost2 {
+    0% {
+        top:-23em;
+        left:39em;
+    }
+    50% {
+        top:-26em;
+        left: 42em
+    }
+    100% { 
+        top:-23em;
+        left:39em;
+    }
+}
+.ghost2:hover #mouth2 {
+    -webkit-animation: oooh2 1s ease-in-out infinite alternate;
+    animation: oooh2 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes oooh2 {  
+    0% {
+     tranform: scale(1);   
+    }
+    100% {
+        transform:  scale(1.1);}
+}
+@keyframes oooh2 {
+    0% {
+     tranform: scale(1);   
+    }
+
+    100% {
+        transform:  scale(1.1);
+    }
 }
 }
 @media only screen and (min-width: 60em) {    
@@ -549,7 +756,7 @@ button a:hover {
 }
 .nav li {
     display: inline-block;
-    background-color: #2A0C59;
+    background-color: #04B404;
     margin: 1em;
     padding: 0;
     text-align: center;
@@ -567,8 +774,16 @@ button a:hover {
 }
 .button a:hover {
     transition: all .5s linear;
-    background-color: #2A0C59;
+    background-color: blue;
     color: black;
+}
+.down {
+    background: none;
+    border: 2px;
+    width: 3em;
+    position: relative;
+    top: 2em;
+    left:-20em;
 }
 .banner {
     overflow: hidden;
@@ -577,6 +792,7 @@ button a:hover {
     background-image: url(../images/background-1.png);
     background-size: 121em;
     background-position: center;
+    height:36em;
 }
 .banner-header {
     overflow:hidden;
@@ -591,14 +807,16 @@ button a:hover {
      tranform: scale(1);   
     }
     100% {
-        transform:  scale(1.1);}
+        transform:  scale(1.1);
+    }
 }
 @keyframes header {  
     0% {
      tranform: scale(1);   
     }
     100% {
-        transform:  scale(1.1);}
+        transform:  scale(1.1);
+    }
 }
 .me {
     position: relative;
@@ -630,14 +848,15 @@ button a:hover {
     }
     100% {
      left:-39em;  
-}}
+    }
+}
 @keyframes cloud1 {  
     0% {
      left:-33em;  
     }
     100% {
      left:-39em;  
-}
+    }
 }
 .cloud-2 { 
     position: relative;
@@ -653,7 +872,8 @@ button a:hover {
     }
     100% {
      left:24em;  
-}}
+    }
+}
 @keyframes cloud2 {
     
     0% {
@@ -661,7 +881,7 @@ button a:hover {
     }
     100% {
      left:24em;  
-}
+    }
 }
 .images {
     display: inline-block;
@@ -697,14 +917,16 @@ button a:hover {
      tranform: scale(1);   
     }
     100% {
-        transform:  scale(1.1);}
+        transform:  scale(1.1);
+    }
 }
 @keyframes header {    
     0% {
      tranform: scale(1);   
     }
     100% {
-        transform:  scale(1.1);}
+        transform:  scale(1.1);
+    }
 }
 .menu { 
     overflow: hidden;
@@ -761,7 +983,8 @@ button a:hover {
      tranform: scale(1);   
     }
     100% {
-        transform:  scale(1.1);}
+        transform:  scale(1.1);
+    }
 }
 @keyframes oooh2 {
     0% {
@@ -769,7 +992,8 @@ button a:hover {
     }
 
     100% {
-        transform:  scale(1.1);}
+        transform:  scale(1.1);
+    }
 }
 .ghost {
     width:5em;
@@ -780,7 +1004,6 @@ button a:hover {
 }
 .js-ghost{ 
     -webkit-animation: ghost 1s linear;
-
     animation: ghost 1s linear;
 }
 @-webkit-keyframes ghost {
@@ -790,11 +1013,11 @@ button a:hover {
     }
     50% {
         top:-35em;
-        left: 7em
+        left: 7em;
     }
     100% { 
         top:-39em;
-        left: 6em
+        left: 6em;
     }
 }
 @keyframes ghost {
@@ -804,11 +1027,11 @@ button a:hover {
     }
     50% {
         top:-35em;
-        left: 7em
+        left: 7em;
     }
     100% { 
         top:-39em;
-        left: 6em
+        left: 6em;
     }
 }
 .ghost:hover #mouth {
@@ -820,7 +1043,8 @@ button a:hover {
      tranform: scale(1);   
     }
     100% {
-        transform:  scale(1.1);}
+        transform:  scale(1.1);
+    }
 }
 @keyframes oooh {
     0% {
@@ -828,6 +1052,7 @@ button a:hover {
     }
 
     100% {
-        transform:  scale(1.1);}
-}
+        transform:  scale(1.1);
+    }
+    }
 }
